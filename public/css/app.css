@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: monospace;
 }
 
 ul,
@@ -26,7 +27,76 @@ img {
   padding: 0 0.5rem;
 }
 
-.container {
+.black_section {
+  background-color: #242424;
+  padding: 70px 0 200px 0;
+}
+
+.main_content {
+  padding-top: 40px;
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 28px;
+  justify-content: space-between;
+}
+
+.main_content .card {
+  flex-basis: calc(33.3333333333% - 28px);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.main_content .card:hover {
+  transform: scale(1.1);
+}
+
+.main_content .card h3 {
+  margin: 15px 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.main_content .card h4,
+.main_content .card p {
+  color: #627274;
+}
+
+.title_section {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  text-shadow: 2px 2px black;
+}
+
+header {
+  padding: 10px 0;
+  background-color: rgba(148, 148, 148, 0.5764705882);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-wrapper .nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-wrapper .nav ul .nav-link {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.nav-wrapper .nav ul .nav-link a.active,
+.nav-wrapper .nav ul .nav-link a:hover {
+  color: #2f2f2f;
+  border-bottom: 1px solid #2f2f2f;
+  cursor: pointer;
 }
 
